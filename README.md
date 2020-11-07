@@ -1,1 +1,1 @@
-# PS3-PWM-Fan-Control
+# PS3 PWM Fan Control
