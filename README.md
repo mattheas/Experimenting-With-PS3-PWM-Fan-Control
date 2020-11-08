@@ -18,4 +18,4 @@ The goal is to use a Y splitter cable to split the PWM signal coming from the in
  
 
  
- <img src = "images/PS3_Diassembly_1.jpeg" width = 800 height = 600>
+ <img src = "images/PS3_Diassembly_1.jpeg" width = 1000 height = 1000>
