@@ -18,6 +18,7 @@ My goal is to use a Y splitter cable to split the PWM signal coming from the ins
  
  <img align="right" src = "images/PS3_Diassembly_1.jpeg" width = 980 height = 1000>
 
+
 Once the power supply was removed it was easy to see where the origin of the fan wires came from, simply pulling up on the connector was enough to unplug it. With some research I was able to find out that the Grey wire was the PWM, the Brown is +12V and the Black is GND. 
 
  <img align="right" src = "images/PS3_Diassembly_2.jpeg" width = 980 height = 1000>
