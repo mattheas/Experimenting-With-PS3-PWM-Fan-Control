@@ -19,7 +19,7 @@ I dissasembled the Playstation 3 to reach internal fan and PWM connector. I star
  <img align="left" src = "images/PS3_Diassembly_1.jpeg" width = 1000 height = 1000>
 
 
-Once the power supply was removed it was easy to see where the fan wires originated from, simply pulling up on the connector was enough to unplug it. With some research I was able to find out that the Grey wire is the PWM, the Brown is +12V and the Black is GND. 
+Once the power supply was removed it was easy to see where the fan wires originated from, simply pulling up on the connector was enough to unplug it. With some research I was able to find out that the Grey wire is the PWM, the Brown is +12V and the Black is GND [1].
 
  <img align="left" src = "images/PS3_Diassembly_2.jpeg" width = 1000 height = 1000>
 
@@ -35,16 +35,21 @@ Then I installed the power supply again also reconnecting the two connectors I h
   
  <img align="left" src = "images/Oscilloscope_Testing_1.jpeg" width = 1000 height = 1000>
  
- Now it was time to locate the actual signal on the oscilloscope. From my research into using PWM for controlling a fan I knew a couple things, first and foremost I was looking for a DC signal (square wave), secondly I knew that the frequency was going to be in a range of 20-28kHz, and lastly I knew that the amplitude of the square wave could be in the range of 3.3-5V. Using the given range of frequencies I calculated the range of periods I could expect to be from 35.7 to 50 microseconds, I could then approximate the TIME/DIV  to set the oscilloscope to, as well as that knowing the potential range of amplitude I set my VOLTS/DIV accordingly. With this I started adjusting the scope to find the signal, the fan had to be left unplugged during this time so I made sure not to have the Playstation run continiusly as I did not want to damage the components. Barring a few hiccups I eventually found my signal as shown below. 
+ Now it was time to locate the actual signal on the oscilloscope. From my research into using PWM for controlling a fan I knew a couple things, first and foremost I was looking for a DC signal (square wave), secondly I knew that the frequency was going to be in a range of 20-28kHz [2], and lastly I knew that the amplitude of the square wave could be in the range of 3.3-5V [2]. Using the given range of frequencies I calculated the range of periods I could expect to be from 35.7 to 50 microseconds, I could then approximate the TIME/DIV  to set the oscilloscope to, as well as that knowing the potential range of amplitude I set my VOLTS/DIV accordingly. With this I started adjusting the scope to find the signal, the fan had to be left unplugged during this time so I made sure not to have the Playstation run continiusly as I did not want to damage the components. Barring a few hiccups I eventually found my signal as shown below. 
    
  <img align="left" src = "images/Oscilloscope_Testing_2.jpeg" width = 1000 height = 1000>
  
- Positioning the signal so that it lined up as squarely with the grid as possible I easily calculated the period to be 40 micro seconds (TIME/DIV = 10 micro seconds), this period gives a frequecny of 25kHz which upon further research appears to be a common target frequecny for some fans. I was also able to read the amplitude of the wave to be 3.2V (VOLTS/DIV = 2V) which also seemed to be a acceptable value, I believe that I may have introduced some error when I read it off the scope and it was was most likely 3.3V. Wanting to analyze it further I found code [1] that was able to read in a PWM signal and return the time in micro seconds 
+ Positioning the signal so that it lined up as squarely with the grid as possible I easily calculated the period to be 40 micro seconds (TIME/DIV = 10 micro seconds), this period gives a frequecny of 25kHz which upon further research appears to be a common target frequecny for some fans. I was also able to read the amplitude of the wave to be 3.2V (VOLTS/DIV = 2V) which also seemed to be a acceptable value, I believe that I may have introduced some error when I read it off the scope and it was was most likely 3.3V. Wanting to analyze it further I found code [3] that was able to read in a PWM signal and return the time in micro seconds 
  
  
  ## Citations
  
- [1]  B. Ripley, *Three Ways To Read A PWM Signal With Arduino*, Jun. 2014. Accessed on: Nov. 7, 2020. [Online]. Available: https://www.benripley.com/diy/arduino/three-ways-to-read-a-pwm-signal-with-arduino/
+ [1]  @oldturkey03 (2011, Jun. 20). *PS3 Fan wires explained* [Online fourm]. Available: https://www.ifixit.com/Answers/View/55562/PS3+Fan+wires+explained#answer55577 [Accessed: Nov. 7, 2020]
+ 
+ [2] *"4-Wire Pulse Width Modulation (PWM) Controlled Fans"* Sep. 2005. Accessed on: Nov. 7, 2020. [Online]. Available: https://wiki.kobol.io/helios4/files/fan/4_Wire_PWM_Spec.pdf
+ 
+ 
+ [3]  B. Ripley, *Three Ways To Read A PWM Signal With Arduino*, Jun. 2014. Accessed on: Nov. 7, 2020. [Online]. Available: https://www.benripley.com/diy/arduino/three-ways-to-read-a-pwm-signal-with-arduino/
  
  
  
