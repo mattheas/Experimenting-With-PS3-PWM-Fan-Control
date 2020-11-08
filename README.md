@@ -39,3 +39,12 @@ Then I installed the power supply again also reconnecting the two connectors I h
    
  <img align="left" src = "images/Oscilloscope_Testing_2.jpeg" width = 1000 height = 1000>
  
+ Positioning the signal so that it lined up as squarely with the grid as possible I easily calculated the period to be 40 micro seconds (TIME/DIV = 10 micro seconds), this period gives a frequecny of 25kHz which upon further research appears to be a common target frequecny for some fans. I was also able to read the amplitude of the wave to be 3.2V (VOLTS/DIV = 2V) which also seemed to be a acceptable value, I believe that I may have introduced some error when I read it off the scope and it was was most likely 3.3V. Wanting to analyze it further I found code [1] that was able to read in a PWM signal and return the time in micro seconds 
+ 
+ 
+ ## Citations
+ 
+ [1]  B. Ripley, *Three Ways To Read A PWM Signal With Arduino*, Jun. 2014. Accessed on: Nov. 7, 2020. [Online]. Available: https://www.benripley.com/diy/arduino/three-ways-to-read-a-pwm-signal-with-arduino/
+ 
+ 
+ 
