@@ -36,5 +36,6 @@ Then I installed the power supply again also reconnecting the two connectors I h
  <img align="left" src = "images/Oscilloscope_Testing_1.jpeg" width = 1000 height = 1000>
  
  Now it was time to locate the actual signal on the oscilloscope. From my research into using PWM for controlling a fan I knew a couple things, first and foremost I was looking for a DC signal (square wave), secondly I knew that the frequency was going to be in a range of 20-28kHz, and lastly I knew that the amplitude of the square wave could be in the range of 3.3-5V. Using the given range of frequencies I calculated the range of periods I could expect to be from 35.7 to 50 microseconds, I could then approximate the TIME/DIV  to set the oscilloscope to, as well as that knowing the potential range of amplitude I set my VOLTS/DIV accordingly. With this I started adjusting the scope to find the signal, the fan had to be left unplugged during this time so I made sure not to have the Playstation run continiusly as I did not want to damage the components. Barring a few hiccups I eventually found my signal as shown below. 
- 
+   
+ <img align="left" src = "images/Oscilloscope_Testing_2.jpeg" width = 1000 height = 1000>
  
