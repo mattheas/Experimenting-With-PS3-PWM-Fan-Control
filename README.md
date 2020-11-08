@@ -27,10 +27,10 @@ Once I had access to where the PWM signal came from I decided to analayze it, mo
 
  <img align="left" src = "images/Wire_Crimping.jpeg" width = 1000 height = 1000>
  
- After the wires were prepared I connected them as shown below. 
+After the wires were prepared I connected them as shown below. 
  
-  <img align="left" src = "images/Test_Wires_Connected.jpeg" width = 1000 height = 1000>
+ <img align="left" src = "images/Test_Wires_Connected.jpeg" width = 1000 height = 1000>
   
-  Then I installed the power supply again also reconnecting the two connectors I had prevously disconnected during inital disassembly. 
+Then I installed the power supply again also reconnecting the two connectors I had prevously disconnected during inital disassembly. 
   
-    <img align="left" src = "images/Oscilloscope_Testing_1.jpeg" width = 1000 height = 1000>
+ <img align="left" src = "images/Oscilloscope_Testing_1.jpeg" width = 1000 height = 1000>
