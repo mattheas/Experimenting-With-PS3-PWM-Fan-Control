@@ -39,7 +39,9 @@ Then I installed the power supply again also reconnecting the two connectors I h
    
  <img align="left" src = "images/Oscilloscope_Testing_2.jpeg" width = 1000 height = 1000>
  
- Positioning the signal so that it lined up as squarely with the grid as possible I easily calculated the period to be 40 micro seconds (TIME/DIV = 10 micro seconds), this period gives a frequecny of 25kHz which upon further research appears to be a common target frequecny for some fans [2]. I was also able to read the amplitude of the wave to be 3.2V (VOLTS/DIV = 2V) which also seemed to be a acceptable value, I believe that I may have introduced some error when I read it off the scope and it was was most likely 3.3V. Wanting to analyze it further I found code [3] that was able to read in a PWM signal and return the time in micro seconds 
+ Positioning the signal so that it lined up as squarely with the grid as possible I easily calculated the period to be 40 micro seconds (TIME/DIV = 10 micro seconds), this period gives a frequecny of 25kHz which upon further research appears to be a common target frequecny for some fans [2]. I was also able to read the amplitude of the wave to be 3.2V (VOLTS/DIV = 2V) which also seemed to be a acceptable value, I believe that I may have introduced some error when I read it off the scope and it was was most likely 3.3V. Wanting to analyze it further I found code [3] shown below, that was able to read in a PWM signal and return the time in micro seconds that the signal was on "HIGH". I then took that number and divided it by the period, that will give you the duty cycle, multiplying that ratio by 100 gives the duty cycle in percentage. 
+ 
+ <img align="left" src = "images/pwm_signal_reader_code_pic.jpeg" width = 1000 height = 1000>
  
  
  ## Citations
