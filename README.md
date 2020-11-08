@@ -16,9 +16,9 @@ My goal is to use a Y splitter cable to split the PWM signal coming from the ins
 
 I dissasembled the Playstation 3 to reach internal fan and PWM connector. I started by removing a handful of philips and tamper proof torx screws from the bottom of the console, then flipping the console over and lifting the top cover off to expose its fan and wires, one of which is the PWM, the other two being GND and +12V. The origin of these wires seemed to be coming from under the power supply. I simply unplugged the two connectors circled below and I was then able to remove the power supply. 
  
- <img align="right" src = "images/PS3_Diassembly_1.jpeg" width = 980 height = 1000>
+ <img align="left" src = "images/PS3_Diassembly_1.jpeg" width = 1000 height = 1000>
 
 
-Once the power supply was removed it was easy to see where the origin of the fan wires came from, simply pulling up on the connector was enough to unplug it. With some research I was able to find out that the Grey wire was the PWM, the Brown is +12V and the Black is GND. 
+Once the power supply was removed it was easy to see where the origin of the fan wires came from, simply pulling up on the connector was enough to unplug it. With some research I was able to find out that the Grey wire is the PWM, the Brown is +12V and the Black is GND. 
 
- <img align="right" src = "images/PS3_Diassembly_2.jpeg" width = 980 height = 1000>
+ <img align="left" src = "images/PS3_Diassembly_2.jpeg" width = 1000 height = 1000>
