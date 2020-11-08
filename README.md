@@ -43,6 +43,9 @@ Then I installed the power supply again also reconnecting the two connectors I h
  
  <img align="left" src = "images/pwm_signal_reader_code_pic.JPG" width = 1000 height = 1000>
  
+ basically what is the ouput of said code (screenshot) and what is the circuit I had to build in order for arduino and oscillisope to both use the two wires coming from ps3(pic)
+ also descrive how the duty cycle changes, when it boots up it foes to 12? then drops down to 8 then linearly increases up to 12/13/14 then makes a couple jumps from like 30% to 50% to 100% duty cycle. ALso talk about how measuring the voltage across it and dividing that by 3.3V gives you the duty cycle and how it MAY have been possibke to build maybe a voltage divider to calculate the duty cycle??
+ 
  
  ## Citations
  
