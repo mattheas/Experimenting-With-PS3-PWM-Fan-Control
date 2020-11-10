@@ -43,6 +43,14 @@ Then I installed the power supply again also reconnecting the two connectors I h
  
  <img align="left" src = "images/pwm_signal_reader_code_pic.JPG" width = 1000 height = 1000>
  
+ I wanted to observe the duty cycle of the wave change while I also watched duration pulse change on the serial monitor. To do this simultaneously I used a breadboard and some jumper wires to connect the GND coming from the Playstation to both the ground on the Arduino and the ground of the probe, I did something similar for the PWM wire, except one went into the digital pin 3 of the arduino and the other to the probe. 
+ 
+ <img align="left" src = "images/Oscilloscope_and_Arduino_Wiring_DutyCycle_Testing.jpeg" width = 1000 height = 1000>
+ 
+With the wiring completed as shown above I started testing. 
+
+ 
+ 
  basically what is the ouput of said code (screenshot) and what is the circuit I had to build in order for arduino and oscillisope to both use the two wires coming from ps3(pic)
  also descrive how the duty cycle changes, when it boots up it foes to 12? then drops down to 8 then linearly increases up to 12/13/14 then makes a couple jumps from like 30% to 50% to 100% duty cycle. ALso talk about how measuring the voltage across it and dividing that by 3.3V gives you the duty cycle and how it MAY have been possibke to build maybe a voltage divider to calculate the duty cycle??
  
