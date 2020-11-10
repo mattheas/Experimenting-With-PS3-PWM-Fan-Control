@@ -14,6 +14,8 @@ My goal is to use a Y splitter cable to split the PWM signal coming from the ins
 
 ## Procedure
 
+### Analyzing PWM signal from Playstaion
+
 I dissasembled the Playstation 3 to reach internal fan and PWM connector. I started by removing a handful of philips and tamper proof torx screws from the bottom of the console, then flipping the console over and lifting the top cover off to expose its fan and wires, one of which is the PWM, the other two being GND and +12V. The origin of these wires seemed to be coming from under the power supply. I simply unplugged the two connectors circled below and I was then able to remove the power supply. 
  
  <img align="left" src = "images/PS3_Diassembly_1.jpeg" width = 1000 height = 1000>
@@ -54,9 +56,15 @@ With the wiring completed as shown above I started testing. The testing started 
 Here is a screenshot of how the pulse width/ duty cycle was impacted due to the Playstation being shutdown. Initally the duty cycle was near 100% then briefly dropped down 20% when the power button was pressed and then followed by 0. It can also be seen again that there is some data that is skewed. I think it is not a huge cause of concern as the fluxation tends to be quite small, but if it does adversely affect external fan behaviour, then these anomalies will be handled in the code. 
 
 <img align="left" src = "images/PS3_Shutoff_Sequence.JPG" width = 1000 height = 1000>
+
+I also wanted to mention that the duty cycle could be calculated by using a DC voltmeter. If the DC voltage is meausred between the PWM wire and GND the average voltage will be read, and since the amplitude of the signal is measured to be ~3.2-3.3V simply dividing the average voltage by the amplitude will also give the duty cycle. As an example when the pulse width was 8 micro seconds I measured the voltage to be 0.63V, dividing this by 3.3V and turned into a percentage gives us a duty cycle of 19.1% which is close to the expected 20%. This confirmed that the Arduino was measuring the pulse width relatively accurately and this method could be used in the project. 
+
+ ### Code Design
+
+blah blah blah
  
- basically what is the ouput of said code (screenshot) and what is the circuit I had to build in order for arduino and oscillisope to both use the two wires coming from ps3(pic)
- also descrive how the duty cycle changes, when it boots up it foes to 12? then drops down to 8 then linearly increases up to 12/13/14 then makes a couple jumps from like 30% to 50% to 100% duty cycle. ALso talk about how measuring the voltage across it and dividing that by 3.3V gives you the duty cycle and how it MAY have been possibke to build maybe a voltage divider to calculate the duty cycle??
+ ### Assembling Project
+// Ask jenish how he like subheaders under 'Procedure' of Code Design, Assembly, etc
  
  
  ## Citations
