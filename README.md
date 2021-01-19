@@ -65,8 +65,7 @@ I also wanted to mention that the duty cycle could be calculated by using a DC v
 The three main objectives of the program is that it needed to read in a 25kHz PWM signal and be able to determine its duty cycle, it also needed to be able to generate a 25kHz square wave with different duty cycles and lastly it needed to communicate with my laptop so I could manually control the fan speed or let it automatically adjust itself to run at the same speed as the internal PS3 fan. My first goal had already been 
 
  ### Assembling Project (Assembly? maybe building?)
-// Ask jenish how he like subheaders under 'Procedure' of Code Design, Assembly, etc
-The assembly of this project started first and formemost with the wiring inside the Playstation. I began by cutting the original fan wire cables so I was left with the female connector that plugs into the motherboard along with a few cm's of wire. I had to split the output of these wires, with one set of outputs going to the internal fan and the other going to the input of the arduino. To achieve this I had purchased 3 pin fan splitter cable that took in 3 male wires as an input and outputted two sets of 3 wires that mirrored the input. With this splitter cable I just had to crimp male pin connectors onto my original fan wires so now the output from the motherboard would flow into the splitter cable and eventually flow to both the fan and arduino. 
+
  
  
  ## Citations
