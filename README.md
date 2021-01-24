@@ -64,7 +64,14 @@ I also wanted to mention that the duty cycle could be calculated by using a DC v
 
 The three main objectives of the program is that it needed to read in a 25kHz PWM signal and be able to determine its duty cycle (which we achieved already when testing the PWM signal), it also needed to be able to generate a 25kHz square wave with different duty cycles and lastly it needed to communicate with my laptop so I could manually control the fan speed or let it automatically adjust itself to run at the same speed as the internal PS3 fan. I found two articles that were of great help with configuring an ethernet shield and setting up a webpage to communicate with my laptop [4] and for generating a 25kHz signal with an Arduino [5]. I used the code written in both these articles as a starting point and made alterations to suit my requirements. 
 
- ### Assembling Project (Assembly? maybe building?)
+The code can be found HEREEEEEEEEEE. A simple explanation to anyone reading this is as follows. On startup of the Arduino it will set the fan operation into automatic mode. Which continually changes the PWM signal of the external fan to match that of the internal fan. Simply put the external fan will spin at the same speed as the internal fan. This is also one of the options that can be selected from the webpage. The other two options are to manually increase or decrease the speed of the external fan irregardless of the speed of the Playstation's fan. Anytime an increase or decrease button is pressed it will respectively change the speed of the fan by 10% from it's current speed. Minimum and maximum values have been programmed in so that the speed of the fan cannot fall below 20% or exceed 100%. 
+
+
+ ### Assembling Project
+ 
+ Assembly of the project was relatively simple. First it consisted of wiring in the Y splitter cable. I first started by cutting the original fan wires a few inches away from the female connector as shown below. This was done so the wires were long enough to reach out from underneath the power supply, this issue was touched upon earlier when first analzying the PWM signal. 
+ 
+ <img align="left" src = "images/Cut_Wiring.JPG" width = 1000 height = 1000>
 
  
  
