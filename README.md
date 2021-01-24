@@ -107,7 +107,7 @@ Once I had tested everything to ensure it functioned as intended I took the time
 
 Lastly here is a screenshot of the webpage. Again simply clicking the "Auto Fan Speed" button once lets the fan automatically adjust itself to be the same speed as the internal fan. The "Increase Fan Speed" and "Decrease Fan speed" buttons respectively increase and decrease the speed of the fan by 10% with each click.
 
-<img align="left" src = "images/Control_Webpage.jpeg" width = 1000 height = 1000> 
+<img align="left" src = "images/Control_Webpage.JPG" width = 1000 height = 1000> 
 
  
  ## Citations
