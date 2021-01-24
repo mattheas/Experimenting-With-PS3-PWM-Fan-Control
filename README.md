@@ -93,6 +93,10 @@ With the internal wiring completed that left the installation of the external fa
 This is the final result with the fan mounted. 
 
 <img align="left" src = "images/Fan_Mounted_1.png" width = 1000 height = 1000>  
+
+With the fan mounted I proceeded to test everything together. The wiring was quite hectic as seen below. I powered the external fan from the +12V and GND from the PS3. I did notice that if the external fan was powered on there was a slight drop in internal fan speed. I assumed that with both fans running off the same +12V and GND the circuit became a current divider, and so with both fans running together they would indiviudally spin slower as compared to one fan by itself as they were getting less current. As mentioned the difference was only slight and not what I would consider a huge concern. A solution to this would be to power the external fan off one of the USB ports on the front of the PS3. Using these ports has no effect on the speed of the internal fan as they are meant to be used to charge controllers while the console is in use. I also powered the Arduino from one of these USB ports in the finished product as it had the benefit of both powering the Arduino on and off when the Playstation was turned on and off, so the Arduino was being switched on and off automatically. And it was self sufficent in the fact that I did not need a seperate power supply or battery to run the Arduino. 
+
+<img align="left" src = "images/Testing_Everything_Together.jpeg" width = 1000 height = 1000>  
  
  ## Citations
  
