@@ -60,6 +60,7 @@ Here is a screenshot of how the pulse width/ duty cycle was impacted due to the 
 I also wanted to mention that the duty cycle could be calculated by using a DC voltmeter. If the DC voltage is meausred between the PWM wire and GND the average voltage will be read, and since the amplitude of the signal is measured to be ~3.2-3.3V simply dividing the average voltage by the amplitude will also give the duty cycle. As an example when the pulse width was 8 micro seconds I measured the voltage to be 0.63V, dividing this by 3.3V and turned into a percentage gives us a duty cycle of 19.1% which is close to the expected 20%. This confirmed that the Arduino was measuring the pulse width relatively accurately and this method could be used in the project. 
 
 
+
 ### Code Design
 
 The three main objectives of the program is that it needed to read in a 25kHz PWM signal and be able to determine its duty cycle (which we achieved already when testing the PWM signal), it also needed to be able to generate a 25kHz square wave with different duty cycles and lastly it needed to communicate with my laptop so I could manually control the fan speed or let it automatically adjust itself to run at the same speed as the internal PS3 fan. I found two articles that were of great help with configuring an ethernet shield and setting up a webpage to communicate with my laptop [4] and for generating a 25kHz signal with an Arduino [5]. I used the code written in both these articles as a starting point and made alterations to suit my requirements. 
@@ -67,7 +68,9 @@ The three main objectives of the program is that it needed to read in a 25kHz PW
 The code can be found HEREEEEEEEEEE. A simple explanation to anyone reading this is as follows. On startup of the Arduino it will set the fan operation into automatic mode. Which continually changes the PWM signal of the external fan to match that of the internal fan. Simply put the external fan will spin at the same speed as the internal fan. This is also one of the options that can be selected from the webpage. The other two options are to manually increase or decrease the speed of the external fan irregardless of the speed of the Playstation's fan. Anytime an increase or decrease button is pressed it will respectively change the speed of the fan by 10% from it's current speed. Minimum and maximum values have been programmed in so that the speed of the fan cannot fall below 20% or exceed 100%. 
 
 
+
 ### Assembling Project
+ 
  
 Assembly of the project was relatively simple. First it consisted of wiring in the Y splitter cable. I first started by cutting the original fan wires a few inches away from the female connector as shown below. This was done so the wires were long enough to reach out from underneath the power supply, this issue was touched upon earlier when first analzying the PWM signal. 
  
@@ -81,7 +84,7 @@ Followed by installing the Dupont housing.
 
   <img align="left" src = "images/Crimped_Connector_With_Dupont_Housing.jpeg" width = 1000 height = 1000>
   
-A similar process was followed for the wires attached to the fan. With all the crimping completed and the Y splitter installed this is what the final product looked like without the lid of the PS3 installed. All the exposed wiring will be covered up once the PS3 is reassembled and only three wires shown in the bottom left of the image which are GND, +12V and PWM will be routed outside the PS3. This approach leaves the internal fan operation unaffected as prevously mentioned but gives us access to the PWM signal.
+A similar process was followed for the wires attached to the fan. With all the crimping completed and the Y splitter installed this is what the final product looked like without the lid of the PS3 installed. All the exposed wiring will be covered up once the PS3 is reassembled and only three wires shown in the bottom left of the image which are GND, +12V and PWM will be routed outside the PS3. This approach leaves the internal fan operation unaffected as previously mentioned but gives access to the PWM signal.
 
 
 <img align="left" src = "images/Internal_Wiring_Completed.jpeg" width = 1000 height = 1000>
@@ -101,6 +104,11 @@ With the fan mounted I proceeded to test everything together. The wiring was qui
 Once I had tested everything to ensure it functioned as intended I took the time to neatly wire everything properly. The image below is how the project finished, working as I had intended it to from the beginning. 
 
 <img align="left" src = "images/Finished_Project.jpeg" width = 1000 height = 1000>  
+
+Lastly here is a screenshot of the webpage. Again simply clicking the "Auto Fan Speed" button once lets the fan automatically adjust itself to be the same speed as the internal fan. The "Increase Fan Speed" and "Decrease Fan speed" buttons respectively increase and decrease the speed of the fan by 10% with each click.
+
+<img align="left" src = "images/Control_Webpage.jpeg" width = 1000 height = 1000> 
+
  
  ## Citations
  
