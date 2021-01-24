@@ -65,7 +65,7 @@ I also wanted to mention that the duty cycle could be calculated by using a DC v
 
 The three main objectives of the program is that it needed to read in a 25kHz PWM signal and be able to determine its duty cycle (which we achieved already when testing the PWM signal), it also needed to be able to generate a 25kHz square wave with different duty cycles and lastly it needed to communicate with my laptop so I could manually control the fan speed or let it automatically adjust itself to run at the same speed as the internal PS3 fan. I found two articles that were of great help with configuring an ethernet shield and setting up a webpage to communicate with my laptop [4] and for generating a 25kHz signal with an Arduino [5]. I used the code written in both these articles as a starting point and made alterations to suit my requirements. 
 
-The code can be found HEREEEEEEEEEE. A simple explanation to anyone reading this is as follows. On startup of the Arduino it will set the fan operation into automatic mode. Which continually changes the PWM signal of the external fan to match that of the internal fan. Simply put the external fan will spin at the same speed as the internal fan. This is also one of the options that can be selected from the webpage. The other two options are to manually increase or decrease the speed of the external fan irregardless of the speed of the Playstation's fan. Anytime an increase or decrease button is pressed it will respectively change the speed of the fan by 10% from it's current speed. Minimum and maximum values have been programmed in so that the speed of the fan cannot fall below 20% or exceed 100%. 
+A simple explanation to anyone reading this is as follows. On startup of the Arduino it will set the fan operation into automatic mode. Which continually changes the PWM signal of the external fan to match that of the internal fan. Simply put the external fan will spin at the same speed as the internal fan. This is also one of the options that can be selected from the webpage. The other two options are to manually increase or decrease the speed of the external fan irregardless of the speed of the Playstation's fan. Anytime an increase or decrease button is pressed it will respectively change the speed of the fan by 10% from it's current speed. Minimum and maximum values have been programmed in so that the speed of the fan cannot fall below 20% or exceed 100%. 
 
 
 
@@ -101,7 +101,7 @@ With the fan mounted I proceeded to test everything together. The wiring was qui
 
 <img align="left" src = "images/Testing_Everything_Together.jpeg" width = 1000 height = 1000>  
 
-Once I had tested everything to ensure it functioned as intended I took the time to neatly wire everything properly. The image below is how the project finished, working as I had intended it to from the beginning. 
+Once I had tested everything to ensure it functioned as intended I took the time to neatly wire everything properly. The image below is how the project finished, working as I had intended it to from the beginning (note the PS3 power cable, Arduino Ethernet cable and HDMI cable are removed).
 
 <img align="left" src = "images/Finished_Project.jpeg" width = 1000 height = 1000>  
 
@@ -109,8 +109,14 @@ Lastly here is a screenshot of the webpage. Again simply clicking the "Auto Fan 
 
 <img align="left" src = "images/Control_Webpage.JPG" width = 1000 height = 1000> 
 
+
+
+## Conclusion
+
+In conclusion this project turned out better than expected. With no major setbacks and the end result being exactly what I wanted (overheating issues completely eliminated) I call it a success. Looking back on it I would have liked to start out with a more concrete plan from the beginning. For example an issue that arose was powering the Arduino. As mentioned previously that matter was solved when it happened and an elegant solution just happened to present itself, that is powering the Arduino from the console's USB port.
+
  
- ## Citations
+## Citations
  
  [1]    @oldturkey03 (2011, Jun. 20). *PS3 Fan wires explained* [Online fourm]. Available: https://www.ifixit.com/Answers/View/55562/PS3+Fan+wires+explained#answer55577 [Accessed: Nov. 7, 2020]
  
