@@ -72,6 +72,10 @@ The code can be found HEREEEEEEEEEE. A simple explanation to anyone reading this
  Assembly of the project was relatively simple. First it consisted of wiring in the Y splitter cable. I first started by cutting the original fan wires a few inches away from the female connector as shown below. This was done so the wires were long enough to reach out from underneath the power supply, this issue was touched upon earlier when first analzying the PWM signal. 
  
  <img align="left" src = "images/Cut_Wiring.jpeg" width = 1000 height = 1000>
+ 
+ I then stripped the ends of the wires and crimped on the Dupont connectors.
+ 
+ <img align="left" src = "images/Crimp_Male_Dupont_Connectors.jpeg" width = 1000 height = 1000>
 
  
  
