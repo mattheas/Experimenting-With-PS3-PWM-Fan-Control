@@ -1,3 +1,15 @@
+/*
+As mentioned in the write up code snippets were taken and altered from:
+
+[3] B. Ripley, Three Ways To Read A PWM Signal With Arduino, Jun. 2014. Accessed on: Nov. 7, 2020. [Online]. Available: https://www.benripley.com/diy/arduino/three-ways-to-read-a-pwm-signal-with-arduino/
+
+[4] Unknown Author (Oct 30, 2016) Arduino Ethernet Shield-LED ON/OFF from webpage (Version 1.0) [Source code]. https://alselectro.wordpress.com/2016/10/30/arduino-ethernet-shield-led-onoff-from-webpage/
+
+[5] Federico Dossena (Uknown date) HOW TO PROPERLY CONTROL PWM FANS WITH ARDUINO (Version 1.0) [Source code]. https://fdossena.com/?p=ArduinoFanControl/i.md
+
+*/
+
+
 #include <SPI.h>
 #include <Ethernet.h>
 
